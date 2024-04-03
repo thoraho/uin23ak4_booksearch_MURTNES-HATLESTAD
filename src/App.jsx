@@ -1,6 +1,6 @@
 import "./App.css"
 import Layout from "./components/Layout"
-import BookCard from "./components/BookCard"
+import SearchResults from "./components/SearchResults"
 import { useState, useEffect } from "react"
 import { Routes, Route } from "react-router-dom"
 
@@ -30,7 +30,7 @@ function App() {
   return (
     <Layout setQuery={setQuery}>
       <Routes>
-        <Route index element={<BookCard content={content} />} />
+        <Route index element={<SearchResults content={content} />} />
       </Routes>
     </Layout>
   )

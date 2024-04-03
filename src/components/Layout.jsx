@@ -1,21 +1,9 @@
-export default function Layout({ children, setQuery }) {
-  const handleClick = (e) => {
-    e.preventDefault()
-    if (e.target.previousElementSibling.value.length >= 3) {
-      setQuery(e.target.previousElementSibling.value)
-    }
-  }
+import Header from "./Header"
 
+export default function Layout({ children, setQuery }) {
   return (
     <>
-      <header>
-        <h1>Book search</h1>
-
-        <form action="">
-          <input type="text" placeholder="Search for a book..." />
-          <button onClick={handleClick}>Search</button>
-        </form>
-      </header>
+      <Header setQuery={setQuery} />
       <main>{children}</main>
     </>
   )
