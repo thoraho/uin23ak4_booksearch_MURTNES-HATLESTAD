@@ -1,0 +1,113 @@
+@import '_variables.scss';
+
+*{
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -5%;
+    text-align: left;
+
+}
+
+body{
+    margin: 2rem 0;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: $light;
+    margin-bottom: 1rem;
+
+    h1{
+        font-size: 1.5rem;
+        font-weight: 900;
+    
+    }
+
+    form{
+        right: 2rem; 
+        display: flex;
+        gap: 1rem;
+    
+        input{
+            border: none;
+            border-radius: 2rem;
+            padding: .6rem 1.2rem;
+        }
+    
+        button{
+            background-color: $primary;
+            color: $light;
+            border: none;
+            border-radius: 2rem;
+            padding: .6rem 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            &:hover{
+                background-color: darken($primary, 10%);
+            }
+        }
+    }
+}
+
+#results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+#contentCard{
+    background-color: $light;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+    transition: box-shadow 0.3s, transform 0.3s, border 0.3s;
+    .bookimg{
+        height: 150px;
+        transition: transform 0.3s;
+    }
+
+    section{
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        h3{
+            margin: 0;
+            font-weight: 800;
+        }
+        span{
+            opacity: 0.3;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 852px){
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+    }
+
+    #result{
+        justify-content: left;
+    }
+
+}
