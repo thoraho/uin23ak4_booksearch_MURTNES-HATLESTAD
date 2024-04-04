@@ -9,10 +9,14 @@
     letter-spacing: -5%;
     text-align: left;
     margin: 0;
-
 }
+
 span{
     opacity: 0.5;
+}
+
+body{
+    margin: 0;
 }
 
 
@@ -22,9 +26,10 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem;
     background-color: $light;
     margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0 1rem; 
 
     h1{
         font-size: 1.5rem;
@@ -33,7 +38,6 @@ header{
     }
 
     form{
-        right: 2rem; 
         display: flex;
         gap: 1rem;
     
@@ -60,6 +64,7 @@ header{
 
 #results{
     display: flex;
+    justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 
@@ -99,6 +104,6 @@ header{
     }
 
     #results{
-        justify-content: center;
+        justify-content:start;
     }
 }
