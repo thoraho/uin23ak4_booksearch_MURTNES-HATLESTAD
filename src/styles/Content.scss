@@ -74,7 +74,6 @@ header{
         flex-direction: column;
         gap: .5rem;
         padding: 1rem;
-        justify-content: space-between;
         align-items: start;
         max-width: fit-content;
         max-height: fit-content;
@@ -98,12 +97,12 @@ header{
         }
     }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 1010px){
     header{
         padding: 1rem 2rem;
     }
 
     #results{
-        justify-content:start;
+        justify-content: start;
     }
 }
